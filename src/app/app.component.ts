@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'animations';
+	
+   myThumbnail="assets/img/telescopethumb.jpg";
+  myFullresImage="assets/img/telescope.jpg";
+
+ 
 }
