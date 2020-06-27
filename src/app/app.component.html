@@ -9,13 +9,25 @@
     <a  (click) = "changeState('state2')" [@changeState]="currentState" class="myblock mx-auto"><img src="https://cdn.mos.cms.futurecdn.net/HqNmPVHMpCjBUBvuWuZuMc.jpg"></a> 
   </div> -->
 
-
-<!-- <div class="row justify-content-center align-items-center">
-  <app-animate></app-animate> 
+<!-- 
+ <div *ngIf="state2" class="row justify-content-center align-items-center">
+  <img #imageThumbnail (click) = "changeState()"  class="ngxImageZoomThumbnail" [src]="myThumbnail" >
+</div>
+<div *ngIf="state" class="row justify-content-center align-items-center">
+  <img   [src]="myFullresImage" >
 </div> -->
-<img [src]=myThumbnail> 
-<app-animate ng-reflect-set-zoom-mode="hover">
+
+<!-- <img [src]=myThumbnail> 
+<app-animate *ngIf = "state" (onclick) = "changeState()" ng-reflect-set-zoom-mode="hover">
   [thumbImage] = {{myThumbnail}}
   [fullImage] = {{myFullresImage}}
-</app-animate>
+</app-animate> -->
 <!-- <router-outlet></router-outlet> -->
+
+<panorama-equirectangle texture="/assets/img/2294472375_24a3b8ef46_o.png"
+    [widthSegments]="60"
+    [heightSegments]="40"
+    [radius]="500"
+    [fieldOfView]="75"
+    [nearClipping]="1"
+    [farClipping]="1100"></panorama-equirectangle>

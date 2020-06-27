@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	
-   myThumbnail="assets/img/telescopethumb.jpg";
-  myFullresImage="assets/img/telescope.jpg";
+/*	state = false;
+	state2=true;
+  myThumbnail="assets/img/telescopethumb.jpg";
+  myFullresImage="assets/img/black.png";
 
- 
+  changeState(){
+  	this.state2=false;
+  		this.state=true;
+
+  	}*/
+    title="app works";
 }

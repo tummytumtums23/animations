@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { AnimateComponent } from './animate/animate.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
+import { CubeComponent } from './cube/cube.component';
+import { PanoramaEquirectangleComponent } from './panorama-equirectangle/panorama-equirectangle.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimateComponent,
-    SecondPageComponent
+    SecondPageComponent,
+    CubeComponent,
+    PanoramaEquirectangleComponent
   ],
   imports: [
     AppRoutingModule,
